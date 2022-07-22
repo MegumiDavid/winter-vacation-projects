@@ -1,0 +1,40 @@
+.nav {
+    background-color: $primary-dark-1;
+
+    .row {
+        flex-direction: row;
+    }
+    .col-1-of-2 {
+        @media only screen and (max-width: $bp-md) {
+            width: 45%;
+        }
+    }
+
+    &__logo {
+        height: 3.5rem;
+        width: auto;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        float: right;
+    }
+
+    &__item {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;
+        width: max-content;
+        &:not(:last-child) {margin-right: 5rem;}
+        a {
+            text-decoration: none;
+            color: $grey;
+            
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}

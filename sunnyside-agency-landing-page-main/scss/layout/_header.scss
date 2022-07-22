@@ -1,0 +1,42 @@
+.header {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-position: bottom;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    overflow: hidden;
+    padding-bottom: 100rem;
+    
+    @media only screen and (max-width: $bp-bg) {
+        height: 75vh;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+        background-image: url("../images/mobile/image-header.jpg");
+        height: 75vh;
+    }
+}
+
+.hero {
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+    align-items: center;
+    margin: 6rem 0;
+
+    h1 {
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-md) {
+            font-size: 5rem;
+        }
+    }
+    
+
+    .arrow-down {
+        margin-top: 10rem;
+    }
+}

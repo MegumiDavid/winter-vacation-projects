@@ -1,0 +1,67 @@
+header, 
+.header {
+    min-height: 70vh;
+    overflow: hidden;
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    background-color: $color-secoundary-light;
+    padding: 0 5rem;
+
+    // transition: opacity 250ms ease-in, transform 400ms ease-in;
+    
+    // display: flex;
+    // align-items: center; 
+    @media only screen and (max-width: $bp-md) {
+        min-height: 80vh;
+        background-image: url("../images/bg-hero-mobile.svg");
+    }
+    @media only screen and (max-width: $bp-sm) {
+        min-height: 60vh;
+        background-image: url("../images/bg-hero-mobile.svg");
+    }
+}
+
+.hero {
+    margin-top: 12rem;
+    padding-bottom: 5rem;
+    
+    @media only screen and (max-width: $bp-md) {
+        margin-top: 7vh;
+    }
+
+    &__content {
+        // transition: opacity 250ms ease-in, transform 400ms ease-in;
+        animation: moveBottomToCenter 900ms;
+        &--title {
+            margin-bottom: 3rem;
+        }
+        
+        &--desc {
+            color: $color-secoundary-dark;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    // &__btn {}
+    
+    &__img {
+        animation: moveBottomToCenter 900ms;
+        width: 100%;
+        height: auto;
+        transition: all .5s ease;
+        // padding-bottom: 50rem;
+        
+        &:hover {
+            transform: scale(1.05) rotate(2deg);
+            
+        }
+
+        @media only screen and (max-width: $bp-md) {
+            margin-top: 7rem;
+            width: 80%;
+        }
+    }
+}

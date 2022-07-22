@@ -1,0 +1,25 @@
+.btn {
+    color: #fff;
+    font-weight: 700;
+    font-size: $font-size;
+    border: none;
+    border-radius: 9rem;
+    padding: 2rem 6.0rem;
+    background-color: $color-primary;
+    transition: all .2s ease;
+    width: max-content;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: $drop-shadow-btn;
+        transform: translateY(-0.2rem);
+    }
+    
+    @media only screen and (max-width: $bp-sm) {
+        padding: 1.5rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        padding: 1.2rem 3.8rem;
+    }
+}

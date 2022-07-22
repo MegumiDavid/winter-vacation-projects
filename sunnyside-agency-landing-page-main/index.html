@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+
+  <header class="header">
+
+      <nav class="nav">
+          <div class="container">
+            <div class="row">
+              <div class="nav__wrapper">
+                <a href="#"><img src="images/logo.svg" alt="sunnyside logo" class="logo nav__logo"></a>
+              </div>
+              <div class="nav__wrapper">
+                <ul class="nav__list hide-for-mobile">
+                  <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                  <li class="nav__item"><a href="#" class="btn nav__btn">Contact</a></li>
+                </ul>
+                <a href="#" id="btnHamburger" class="nav__toggle hide-for-desktop">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul class="nav__menu hide-for-desktop">
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        
+
+
+      <div class="hero">
+        <div class="container">
+          <h1>We are creatives</h1>
+          <img 
+            src="images/icon-arrow-down.svg" alt="arrow down" class="arrow-down bounce">
+        </div>
+      </div>
+  </header>
+
+  <section class="services">
+    <div class="service service--1">
+      <h2>Transform your brand</h2>
+      <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <a href="#" class="learn-more">
+        <span class="highlight highlight--1">Learn more</span>
+      </a>
+    </div>
+
+    <img 
+    src="images/desktop/image-transform.jpg" 
+      alt="" 
+      class="service__img service__img--1"
+    >
+
+    <img src="images/desktop/image-stand-out.jpg" alt="" class="service__img service__img--2">
+    <div class="service service--2">
+      <h2>Stand out to the right audience</h2>
+      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+      <a href="#" class="learn-more">
+        <span class="highlight highlight--2">Learn more</span>
+      </a>
+    </div>
+    
+    <div class="service-wrapper">
+      <img src="images/desktop/image-graphic-design.jpg" alt="" class="service-wrapper__img">
+      <div class="service-wrapper__content service-wrapper__content--1">
+        <h2>Graphic design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+    </div>
+    
+    <div class="service-wrapper">
+      <img src="images/desktop/image-photography.jpg" alt="" class="service-wrapper__img">
+      <div class="service-wrapper__content service-wrapper__content--2">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="testimonials">
+    <h3>Client testimonials</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="flexible">
+          <img src="images/image-emily.jpg" alt="">
+          <p class="desc ">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        </div>
+        <div class="profile">
+          <h4>Emily R.</h4>
+          <small class="career">Marketing Director</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="flexible">
+          <img src="images/image-thomas.jpg" alt="">
+          <p class="desc ">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        </div>
+        <div class="profile">
+          <h4>Thomas S.</h4>
+          <small class="career">Chief Operating Officer</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="flexible">
+          <img src="images/image-jennie.jpg" alt="">
+          <p class="desc ">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        </div>
+        <div class="profile">
+          <h4>Jennie F.</h4>
+          <small class="career">Business Owner</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="gallery__photo">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="" class="gallery__photo">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="" class="gallery__photo">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="gallery__photo">
+  </section>
+
+  <footer class="footer">
+    <a href=""><img src="images/logo.svg" alt="" class="footer__logo"></a>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="#" class="footer__link">About</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">Services</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">Projects</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="footer__social">
+      <li><a href="#"><i class="icon fa-brands fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="icon fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="icon fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="icon fa-brands fa-pinterest"></i></a></li>
+    </ul>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a target="_blank" href="https://github.com/MegumiDavid">MegumiDavid</a>.
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/8bc26bac35.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

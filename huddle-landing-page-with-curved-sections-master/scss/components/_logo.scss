@@ -1,0 +1,8 @@
+.logo {
+    height: 2.8rem;
+    width: auto;
+    
+    @media only screen and (max-width: $bp-sm) {
+        height: 2.4rem;
+    }
+}

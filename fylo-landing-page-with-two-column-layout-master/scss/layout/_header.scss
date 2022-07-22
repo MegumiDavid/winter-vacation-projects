@@ -1,0 +1,56 @@
+.header {
+    margin-top: 2.5rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-sm) {
+        text-align: center;
+    }
+
+    &__content {
+        p {
+            margin-top: 3rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__img {
+        width: 110%;
+        height: auto;
+        
+        @media only screen and (max-width: $bp-sm) {
+            margin-top: 10rem;
+            margin-bottom: -5rem;
+            width: 100%;
+        }        
+    }
+
+    @media only screen and (max-width: $bp-bg) {
+        .form {
+            .row {
+                flex-direction: column;
+            }
+            &__input {
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        .form {
+            .row {
+                flex-direction: column;
+            }
+            &__btn {
+                width: 50%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $bp-x-sm) {
+        .form__btn {
+            width: 100%;
+        }
+    }
+
+    
+}

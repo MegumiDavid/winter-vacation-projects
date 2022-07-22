@@ -1,0 +1,41 @@
+.cta {
+    color: #fff;
+    background-color: $primary-pale;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-sm) {
+        text-align: center;
+    }
+
+    .row {
+        align-items: start;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        color: $grayish-blue;
+    }
+    p {
+        color: $grayish-blue;
+        
+        @media only screen and (max-width: $bp-sm) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    .form {
+        .row {
+            flex-direction: column;
+        }
+        &__input {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: $bp-x-sm) {
+        .form .btn {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    margin-top: 8rem;
+    
+    @media only screen and (max-width: $bp-md) {
+        margin-top: 4rem;
+    }
+
+    .row {
+        flex-direction: column;
+
+    }
+
+    &__content {
+        text-align: center;
+        animation: moveBottomToCenter 900ms;
+        
+        p {
+            width: 75%;
+            margin: 3rem 0;
+        }
+
+        .btn {
+            margin-bottom: 9rem;
+        }
+    }
+
+    &__img {
+        width: 65%;
+        height: 100%;
+        
+        @media only screen and (max-width: $bp-md) {
+            width: 85%;
+        }
+    }
+}

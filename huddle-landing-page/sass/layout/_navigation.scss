@@ -1,0 +1,44 @@
+.nav {
+    height: min-content;
+    padding-top: 2rem;
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+        
+        @media only screen and (max-width: $bp-md) {
+            float: left;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+
+    // &__item {margin-left: 2rem;}
+
+    &__btn {
+        color: $color-grey;
+        background-color: #fff;
+        padding: 1.5rem 6.0rem;
+
+        @media only screen and (max-width: $bp-sm) {
+            padding: 1.5rem 4rem;
+        }
+        
+        @media only screen and (max-width: $bp-sm) {
+            padding: 1rem 3.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $bp-md) {
+    .nav .row{
+       flex-direction: row;
+       justify-content: space-between;
+   }
+}

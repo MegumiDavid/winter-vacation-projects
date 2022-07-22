@@ -1,0 +1,129 @@
+.footer {
+    background-color: $color-secoundary-dark;
+    padding: 20rem 5rem 5rem 5rem;
+    position: relative;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+
+    &__cta-box {
+        background-color: #fff;
+        max-width: 81.6rem;
+        // min-width: 40%;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        padding: 4rem 8rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+        box-shadow: $drop-shadow-box;
+
+
+        .h2 {
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-md) {
+            min-width: 75%;
+            // width: min-content;
+            padding: 4rem 4rem;
+        }
+        @media only screen and (max-width: $bp-sm) {
+            width: min-content;
+            padding: 4rem 4rem;
+        }
+    }
+
+    // &__logo-box {}
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+        filter: brightness(0) invert(1);
+        margin-bottom: 4rem;
+    }
+
+    &__list {
+        list-style: none;
+
+        @media only screen and (max-width: $bp-md) {
+            margin-bottom: 5rem;
+        }     
+    }
+
+    
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin-bottom: 2rem;   
+    }
+
+    
+    &__icon {
+        color: #fff;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1.5rem;
+        
+        &--social {
+            margin-right: 0;
+        }
+    }
+
+
+    &__link:link,
+    &__link:visited {
+        color: rgba(255, 255, 255, 0.838);
+        font-family: 'Open Sans';;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+    &__link:hover,
+    &__link:active {
+        text-decoration: underline;
+    }
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.7px;
+    border-color: #fff;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    transition: all 200ms;
+
+    &:hover {
+        border-color: $color-primary;
+        & > * {
+            color: $color-primary;
+        }
+    }
+}
+
+.copyright {
+    float: right;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.816);
+    
+    @media only screen and (max-width: $bp-sm) {
+        float: none;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: $bp-sm) {
+    .social-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -0.01px;
+    }
+}

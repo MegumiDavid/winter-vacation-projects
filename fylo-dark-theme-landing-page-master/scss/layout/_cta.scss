@@ -1,0 +1,64 @@
+.cta {
+    background-color: $primary-dark-1;
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: .4rem;
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    
+    @media only screen and (max-width: $bp-md) {
+        padding: .5rem 1rem;
+        width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        width: 80%;
+    }
+
+    .box {
+        width: 100%;
+        margin: 0 auto;
+        h2 {
+            margin-bottom: 1.6rem;
+        }
+        p {
+            margin-bottom: 1.6rem;
+        }
+    }
+}
+
+.form {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-md) {
+        flex-direction: column;
+    }
+
+    &__input, &__input:focus {
+        flex: 1;
+        margin-right: 1.2rem;
+        border: none;
+        border-radius: 3.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        @media only screen and (max-width: $bp-md) {
+            margin-right: 0rem;
+            margin-bottom: 2.5rem;
+            padding: 1.6rem;
+            
+        }
+    }
+    
+    &__submit {
+        padding: 1.6rem 2.4rem;
+        min-width: max-content;
+    }
+}

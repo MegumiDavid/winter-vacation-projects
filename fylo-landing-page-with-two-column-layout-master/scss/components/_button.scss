@@ -1,0 +1,15 @@
+.btn {
+    background-color: $primary-bright;
+    color: #fff;
+    width: max-content;
+    padding: 1.6rem 4rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: rgba($primary-bright,0.8);
+    }
+}

@@ -1,0 +1,42 @@
+.nav {
+
+    @media only screen and (max-width: $bp-sm) {
+        .row {
+            flex-direction: row;
+        }
+        .col-1-of-2 {
+            width: 45%;
+        }
+    }
+
+    &__logo {
+        height: 2.8rem;
+        width: auto;
+        
+        @media only screen and (max-width: $bp-sm) {
+            height: 1.8rem;
+        }
+    }
+
+    &__btn {
+        float: right;
+        border: 1px solid $color-primary;
+        padding: 1.2rem 2.6rem;
+        background-color: #fff;
+        color: $color-primary;
+        font-weight: 600;
+        border-color: $color-primary;
+        box-shadow: 0 0 3px $color-primary;
+        
+        &:hover {
+            border-color: $color-primary-light;
+            box-shadow: 0 0 3px $color-primary-light;
+            color: $color-primary-light;
+            background-color: #fff;
+        }
+        
+        @media only screen and (max-width: $bp-sm) {
+            padding: 1rem 2.2rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.cta {
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 9rem;
+    
+    @media only screen and (max-width: $bp-md) {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    h3 {
+        margin-bottom: 3rem;
+    }
+}
+
+.cta {
+    transition: all 600ms;
+}
+
+.cta.appear {
+    opacity: 0;
+    transform: translateY(8rem);
+}

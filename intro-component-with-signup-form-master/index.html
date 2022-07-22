@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/main.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <main class="main">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="main__content">
+            <h1 class="main__title">Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+              but understanding how developers think is invaluable.</p>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="form-section">
+            <div class="form-section__title-box">
+              <b>Try it free 7 days</b> then $20/mo. thereafter
+            </div>
+            <div class="form-section__box">
+              <form action="#" class="form" id="form">
+                    <div class="wrapper">
+                      <div class="input-wrapper">
+                        <input id="fName" type="text" class="form__input" placeholder="First Name" >
+                        <i id="fNameIcon" class="fa-solid "></i>
+                        <small id="fNameMsg"></small>
+                      </div>
+                    </div>                            
+                    <div class="wrapper">
+                      <div class="input-wrapper">
+                        <input id="lName" type="text" class="form__input" placeholder="Last Name" >
+                        <i id="lNameIcon" class="fa-solid"></i>
+                        <small id="lNameMsg"></small>
+                      </div>
+                    </div>
+                    <div class="wrapper">
+                      <div class="input-wrapper">
+                        <input id="email" type="email" class="form__input" placeholder="Email Address" >
+                        <i id="emailIcon" class="fa-solid"></i>
+                        <small id="emailMsg"></small>
+                      </div>
+                    </div>
+                    <div class="wrapper">
+                      <div class="input-wrapper">
+                        <input id="password" type="password" class="form__input" placeholder="Password" >
+                        <i id="passwordIcon" class="fa-solid"></i>
+                        <small id="passwordMsg"></small>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn--submit">
+                      Claim Your Free Trial
+                    </button>    
+                    <p class="form__term-services">By clicking the button, you are agreeing to our <a href="#"><span class="font-red"><b>Terms and Services</b></span></a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">MegumiDavid</a>.
+    </p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/8bc26bac35.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

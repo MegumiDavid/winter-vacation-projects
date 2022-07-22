@@ -1,0 +1,60 @@
+.header {
+    text-align: center;
+    padding-bottom: 30rem;
+    
+    @media only screen and (max-width: $bp-bg) {
+        padding-bottom: 15rem;
+    }  
+    @media only screen and (max-width: $bp-md) {
+        padding-bottom: 20rem;
+    }
+
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    @media only screen and (max-width: $bp-md) {
+        background-image: url("../images/bg-curvy-mobile.svg");
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    &__content {
+        width: 75%;
+        
+        @media only screen and (max-width: $bp-sm) {
+            width: 85%;
+        }
+    }
+    
+    &__img {
+        width: 85%;
+        height: 100%;
+        
+        @media only screen and (max-width: $bp-sm) {
+            width: 95%;
+            margin-top: 4rem;
+        }
+    }
+    
+    &__title {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        
+        @media only screen and (max-width: $bp-sm) {
+            margin-top: 4rem;
+        }
+    }
+    
+    &__desc {
+        width: 85%;
+        margin-bottom: 3rem;
+    }
+
+    &__btn {
+        padding: 1.5rem 6rem;
+    }
+}

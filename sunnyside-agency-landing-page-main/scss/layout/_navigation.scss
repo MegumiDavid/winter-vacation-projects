@@ -1,0 +1,141 @@
+.nav {
+    background-color: $blue;
+    @media only screen and (max-width: $bp-md) {
+        .row {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        @media only screen and (max-width: $bp-md) {
+            margin-top: 2rem;
+        }
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        transition: all 100ms;
+        
+        &:hover {
+            color: $very-dark-desaturated-blue;
+        }
+    }
+
+    &__btn {
+        border-radius: 3rem;
+        width: max-content;
+        padding: 1.6rem 2.8rem;
+        color: $very-dark-desaturated-blue;
+        background-color: #fff;
+        margin-left: .25rem;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        transition: all 100ms;
+        
+        &:hover {
+            background-color: #6FCFFF;
+            color: #fff;
+
+        }
+    }
+
+    
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    > span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: #fff;
+        transition: all 100ms center;
+        transform-origin: 3px 1px;
+        border-radius: 5rem;
+
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+        transition: all 200ms;
+    }
+  }
+
+  &__toggle.open-btn {
+    > span:first-child {
+        transform: rotate(45deg);
+        transform-origin: 12% 40%;
+    }
+    > span:nth-child(2) {
+        opacity: 0;
+    }
+    > span:last-child {
+        transform: rotate(-45deg);
+        transform-origin: 12% 40%;
+    }
+  }
+
+  &__menu {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2rem);
+    position: absolute;
+    border-radius: 1rem;
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 2.5%;
+    padding: 4rem 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms linear;
+
+    .nav {
+        &__item {
+            margin: 0 auto;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+        &__link {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+  }
+}
+
+
+.open-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide-for-desktop {
+    @media only screen and (min-width: 901px) {
+        display: none;
+    }
+  }
+  
+  .hide-for-mobile {
+    @media only screen and (max-width: 900px) {
+        display: none;
+    }
+  }

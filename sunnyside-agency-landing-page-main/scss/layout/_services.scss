@@ -1,0 +1,124 @@
+.services {
+    display: grid;
+    align-items: center;
+    grid-gap: 0;
+    grid-template-columns: repeat(2 ,1fr);
+    
+    @media only screen and (max-width: $bp-bg) {
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
+
+.service {
+    padding: 10rem; 
+    
+    @media only screen and (max-width: $bp-x-bg) {
+        padding: 4em; 
+    }
+    
+    @media only screen and (max-width: $bp-bg) {
+        padding: 8em; 
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: $bp-md) {
+        padding: 8rem 4em; 
+    }
+
+    p {
+        color: $grayish-blue;
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+
+
+    .learn-more {
+        font-family: 'Fraunces', serif;
+        color: $very-dark-desaturated-blue;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+    
+    .highlight {
+        padding-right: .6rem;
+        padding-left:  .6rem;
+        transition: all .5s;
+
+        &--1 {
+            background: linear-gradient(
+                to bottom,
+                transparent 60%,
+                rgba($yellow,.3) 40%
+                );
+            &:hover {
+                padding-right: 2rem;
+                background: linear-gradient(
+                    to bottom,
+                    transparent 40%,
+                    rgba($yellow,.5) 60%
+                );
+            }
+        }
+        &--2 {
+            background: linear-gradient(
+                to bottom,
+                transparent 60%,
+                rgba($soft-red,.3) 40%
+                );
+            &:hover {
+                padding-right: 2rem;
+                background: linear-gradient(
+                    to bottom,
+                    transparent 40%,
+                    rgba($soft-red,.5) 60%
+                );
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        
+        @media only screen and (max-width: $bp-bg) {
+            &--2 {
+                grid-row: 4 / 5;
+            }
+        }
+    }
+}
+
+.service-wrapper {
+    position: relative;
+    &__content {
+        position: absolute;
+        bottom: 12.5%;
+        padding-right: 10rem;
+        padding-left: 10rem;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%); // reset
+        width: 100%;
+        
+        @media only screen and (max-width: $bp-x-bg) {
+            bottom: 4%;
+        }
+
+        @media only screen and (max-width: $bp-bg) {
+            bottom: 3%;
+        }
+
+        h2 {
+            color: rgba($very-dark-desaturated-blue,.8);
+        }
+        p {
+            margin: 2rem 0;
+            color: rgba($very-dark-desaturated-blue,.8);
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

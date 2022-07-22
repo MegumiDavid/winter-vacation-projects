@@ -1,0 +1,57 @@
+.testimonials {
+    text-align: center;
+    padding: 10rem 0;
+
+    h3 {
+        text-align: center;
+        padding-bottom: 8rem;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8rem;
+    
+    @media only screen and (max-width: $bp-xl-bg) {
+        padding: 0 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-bg) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
+    width: 30%;
+    margin: 5rem 0;
+    
+    @media only screen and (max-width: $bp-bg) {
+        width: 80%;
+    }
+
+    img {
+        border-radius: 50%;
+        width:  8rem;
+        height: 8rem;
+    }
+
+    .desc {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        color: $very-dark-grayish-blue;
+    }
+}
+
+.profile {
+    // h4 { }
+    .career {
+        color: $grayish-blue;
+        font-size: 1.4rem;
+    }
+}
+
+.flexible {
+    height: 90%;
+}

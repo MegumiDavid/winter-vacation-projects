@@ -1,0 +1,28 @@
+.form {
+    .row {
+        align-items: start;
+    }
+    &__input {
+        width: 60%;   
+        margin-bottom: 2rem;
+        font-family: inherit;
+        font-size: 1.2rem;
+        font-weight: 400;
+        // color: $color-secondary-dark;
+        padding: 1.5rem;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-sizing:border-box;
+        flex: 1;
+        margin-right: 2rem;
+    }
+    
+    &__btn {
+        // width: 23%;   
+        width: max-content;
+
+        @media only screen and (max-width: $bp-sm) {
+            width: 100%;
+        }
+    }
+}

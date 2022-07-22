@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    font-family: 'Open Sans';
+    font-size: $font-size;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+h1, .h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 4.4rem;
+    line-height: 1.5;
+    color: $color-secoundary-dark;
+}

@@ -1,0 +1,78 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 5rem 10rem;
+    
+    @media only screen and (max-width: $bp-md) {
+        padding: 4rem 7rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        padding: 2rem 5rem;
+    }
+
+    .row--reverse {
+        background-color: #fff;
+    }
+}
+
+.feature .container .row--reverse {
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    &--reverse {
+        flex-direction: row-reverse;
+        background-color: #fff;
+    }
+    
+    @media only screen and (max-width: $bp-sm) {
+        flex-direction: column;
+    }
+}
+
+.col-1-of-2 {
+    width: 47.5%;
+    
+    @media only screen and (max-width: $bp-sm) {
+        width: 100%;
+    }
+}
+
+.col-1-of-4 {
+    width: 35%;
+    
+    @media only screen and (max-width: $bp-md) {
+        width: 45%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        width: 100%;
+    }
+
+    &--hidden {
+        width: 15%;
+
+        @media only screen and (max-width: $bp-md) {
+            width: 0%;
+        }
+    }
+}
+
+.col-2-of-4 {
+    width: 50%;
+
+    @media only screen and (max-width: $bp-md) {
+        width: 45%;
+    }
+    
+    @media only screen and (max-width: $bp-sm) {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}

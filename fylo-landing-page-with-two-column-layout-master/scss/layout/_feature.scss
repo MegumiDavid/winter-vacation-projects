@@ -1,0 +1,126 @@
+.feature {
+    background-color: $grayish-blue;
+    overflow: hidden;
+    
+    @media only screen and (max-width: $bp-sm) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        padding-top: 5rem;
+        .link-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+    }
+    
+    &__bg {
+        margin-top: 15rem;
+        transform: translateY(1.5rem);
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__desc {
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        color: $cyan;
+        margin-bottom: 2rem;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        padding-bottom: .5rem;
+        border-bottom: 1.5px solid $cyan;
+        text-align: center;
+        transition: .1s ease-in-out;
+        
+        &:hover {
+            border-bottom: 1.5px solid $cyan-light;
+            color: $cyan;
+
+            p {
+                color: $cyan-light;
+            }
+            .arrow {
+                // filter: hue-rotate(169) saturate(42) brightness(91%); 
+                transform: translateX(.4rem);
+            }
+        }
+        
+        .arrow {
+            transition: all .2s ease-in-out;
+        }
+
+        p {
+            color: $cyan;
+            margin-right: 1rem;
+            transition: .1s ease-in-out;
+        }
+    }
+
+    &__img {
+        width: 110%;
+        height: auto;
+        
+        @media only screen and (max-width: $bp-sm) {
+            margin-bottom: 5rem;
+            width: 100%;
+        }
+    }
+}
+
+.story {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+}
+
+.story-box {
+    text-align: left;
+    width: 65%;
+    border-radius: .5rem;
+    padding: 3rem 4rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    
+    @media only screen and (max-width: $bp-bg) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        margin-bottom: 10rem;
+    }
+
+}
+
+.author {
+    display: flex;
+    margin-top: 2rem;
+
+    &__avatar {
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 1.5rem;
+    }
+
+    &__desc {
+        h5 {
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.quote {
+    margin-bottom: 1rem;
+}

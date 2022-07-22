@@ -1,0 +1,78 @@
+.footer {
+    background-color: $cyan;
+    padding: 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    &__logo {
+        width: 15rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        margin-bottom: 4rem;
+        margin-top:    4rem;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $dark-moderate-cyan;
+        font-weight: 500;
+        transition: all 100ms;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex: row;
+        list-style: none;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        .icon {
+            color: $dark-moderate-cyan;
+            transition: all 100ms;
+            font-size: 2rem;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+.attribution { 
+    font-size: 1.2rem;  
+    color: $dark-moderate-cyan;
+    padding-top: 5rem;
+    margin-bottom: -2rem;
+}
+.attribution a { 
+    color: $dark-moderate-cyan;
+    text-decoration: underline; 
+    transition: all 100ms;
+    
+    &:hover {
+        color: #fff;
+        text-decoration: none; 
+    }
+}

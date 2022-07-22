@@ -1,0 +1,109 @@
+.footer {
+    background-color: $primary-dark;
+    color: $light-gray;
+    font-size: 1.2rem;
+    
+    &__logo {
+        filter: brightness(0) invert(1);
+        margin-bottom: 4rem;
+    }
+    
+    .row {
+        align-items: start;
+    }
+
+    
+    &__list {
+        color: $light-gray;
+
+        @media only screen and (max-width: $bp-sm) {
+            margin-bottom: 5rem;
+            font-size: 1.6rem;
+        }
+    }
+    
+    &__item {
+        margin-bottom: 1.2rem;
+        a {
+            text-decoration: none;
+            color: $light-gray;
+            font-weight: 400;
+            font-family: 'Raleway', sans-serif;
+            transition: color .2s;
+            
+            &:hover {
+                color: $primary-bright;
+            }
+
+            @media only screen and (max-width: $bp-sm) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__icon {
+        color: #fff;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: $bp-sm) {
+    .social-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    
+    @media only screen and (max-width: $bp-sm) {
+        .social {
+            justify-content: center;
+        }
+    }
+
+    a {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $light-gray;
+        
+        @media only screen and (max-width: $bp-sm) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.7px;
+    border-color: $light-gray;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    transition: all .2s;
+
+    &:hover {
+        border-color: $primary-bright;
+        & > * {
+            color: $primary-bright;
+        }
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 5rem; 
+    margin-bottom: -2rem; 
+    color: $light-gray;
+}
+.attribution a { 
+    color: $light-gray;
+}
