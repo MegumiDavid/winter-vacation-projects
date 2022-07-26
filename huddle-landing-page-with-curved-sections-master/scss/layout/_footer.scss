@@ -105,19 +105,26 @@
         }
     }
 
+    .message {
+        font-size: 1.4rem;
+    }
+
     &__input {
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
         width: 100%;
         font-family: inherit;
         font-size: 1.2rem;
         font-weight: 400;
         color: $color-secondary-dark;
         padding: 1rem;
-        border: 1px solid #000;
+        border: 1px solid #494949;
         border-radius: 4px;
         box-sizing:border-box;
-
-        &:invalid {
+        
+        &:focus {
+            border: 1px solid #494949;
+        }
+        /* &:invalid {
             outline: none !important;
             border-color: $color-red;
           }
@@ -125,12 +132,13 @@
         &:valid {
             outline: none !important;
             border-color: $color-green;
-          }
+          } */
     }
 
     &__btn {
         border-radius: .3rem;
         padding: 1rem 3rem;
+        margin-top: 1rem;
 
         @media only screen and (max-width: $bp-md) {
             float: right;

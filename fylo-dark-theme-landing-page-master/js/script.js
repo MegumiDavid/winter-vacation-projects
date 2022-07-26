@@ -9,13 +9,12 @@ form.addEventListener('submit', (e) => {
     const inputValid = validateEmail(inputEmail)
     
     if (!inputEmail) {
-        formInput.style.border = '3px solid orange'
+        formInput.style.border = '1.5px solid red'
     }
     else if (!inputValid) {
-        console.log('invalid input');
-        formInput.style.border = '3px solid red'
+        formInput.style.border = '1.5px solid red'
     } else {
-        console.log('sending data to api');
+        formInput.style.border = '2px solid green'
     }
 
 })
@@ -26,3 +25,33 @@ function validateEmail(email) {
 }
 
 // megumidavid@gmail.com
+
+// onScroll animation
+// const header = document.querySelector('.header__content') 
+const features = document.querySelectorAll('.feature') 
+const productiveImg = document.querySelector('.productive__img') 
+const productiveContent = document.querySelector('.productive__content') 
+const stories = document.querySelectorAll('.story__box') 
+
+const observer = new IntersectionObserver( (entries, observer) => {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) return
+        entry.target.classList.remove('appear')
+        observer.unobserve(entry.target)
+        console.log(entry.target)
+    })},
+    {
+        root: null,
+        threshold: .1,
+    }
+)
+
+// observer.observe(header)
+observer.observe(productiveImg)
+observer.observe(productiveContent)
+features.forEach( f => {
+    observer.observe(f)
+})
+stories.forEach( s => {
+    observer.observe(s)
+})

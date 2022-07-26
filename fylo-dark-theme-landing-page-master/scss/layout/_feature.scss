@@ -25,6 +25,7 @@
 
 .feature {
     text-align: center;
+    transition: opacity 400ms, transform 800ms;
 
     h3 {
         margin-top   : 2.5rem ;
@@ -37,4 +38,9 @@
         font-size: 1.4rem;
         font-family: 'Open Sans', sans-serif;
     }
+}
+
+.feature.appear {
+    opacity: 0;
+    transform: translateY(8rem);
 }

@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@-webkit-keyframes moveBottomToCenter {
+  0% {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes moveBottomToCenter {
+  0% {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -311,6 +331,15 @@ ul {
   margin-bottom: 1rem;
 }
 
+.feature-wrapper {
+  transition: opacity 400ms, transform 800ms;
+}
+
+.feature-wrapper.appear {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .footer {
   background-color: hsl(243deg, 87%, 12%);
   color: hsl(0deg, 0%, 75%);
@@ -423,11 +452,17 @@ ul {
     text-align: center;
   }
 }
+.header__content {
+  -webkit-animation: moveBottomToCenter 900ms;
+          animation: moveBottomToCenter 900ms;
+}
 .header__content p {
   margin-top: 3rem;
   margin-bottom: 2.5rem;
 }
 .header__img {
+  -webkit-animation: moveBottomToCenter 900ms;
+          animation: moveBottomToCenter 900ms;
   width: 110%;
   height: auto;
 }
@@ -468,25 +503,40 @@ ul {
     width: 45%;
   }
 }
-.nav.toggle #btnBurger > span:first-child {
-  transform: rotate(45deg);
-  transform-origin: 12% 40%;
-}
-.nav.toggle #btnBurger > span:nth-child(2) {
-  opacity: 0;
-}
-.nav.toggle #btnBurger > span:last-child {
-  transform: rotate(-45deg);
-  transform-origin: 12% 40%;
+@media only screen and (max-width: 25em) {
+  .nav .row {
+    flex-direction: column;
+  }
+  .nav .col-1-of-2 {
+    width: 100%;
+  }
 }
 .nav__logo {
   height: 3.5rem;
   width: auto;
 }
+@media only screen and (max-width: 25em) {
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+}
 .nav__list {
   display: flex;
   align-items: center;
   float: right;
+}
+@media only screen and (max-width: 25em) {
+  .nav__list {
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 .nav__item {
   font-family: "Raleway", sans-serif;
@@ -501,55 +551,8 @@ ul {
   text-decoration: none;
   color: hsl(243deg, 87%, 12%);
 }
-
-@media only screen and (min-width: 31.3125em) {
-  .hide-for-desktop {
-    display: none;
+@media only screen and (max-width: 25em) {
+  .nav__item:not(:last-child) {
+    margin-right: 2.5rem;
   }
-}
-
-@media only screen and (max-width: 31.25em) {
-  .hide-for-mobile {
-    display: none;
-  }
-}
-
-.nav__toggle {
-  display: flex;
-  flex-direction: column;
-  float: right;
-}
-.nav__toggle > span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: hsl(243deg, 87%, 12%);
-  transition: all 0.3s center;
-  transform-origin: 3px 1px;
-  transition: all 0.5s;
-}
-.nav__toggle > span:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.mobile-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: hsl(0deg, 0%, 75%);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem;
-  text-align: center;
-  margin-bottom: -3rem;
-  margin-top: -0.5rem;
-  display: none;
-  transition: all 1s;
-}
-.mobile-menu li:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.toggle-menu {
-  display: block;
 }/*# sourceMappingURL=main.css.map */

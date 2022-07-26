@@ -7,6 +7,7 @@
     }
 
     &__content {
+        animation: moveBottomToCenter 900ms;
         p {
             margin-top: 3rem;
             margin-bottom: 2.5rem;
@@ -14,6 +15,7 @@
     }
 
     &__img {
+        animation: moveBottomToCenter 900ms;
         width: 110%;
         height: auto;
         

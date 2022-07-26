@@ -125,6 +125,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: opacity 400ms, transform 800ms;
 }
 .footer__logo {
   width: 15rem;
@@ -181,10 +182,16 @@ a {
   text-decoration: none;
 }
 
+.footer.appear {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: 50%;
+  transition: opacity 400ms, transform 800ms;
 }
 @media only screen and (max-width: 530px) {
   .gallery {
@@ -196,6 +203,11 @@ a {
   width: 100%;
 }
 
+.gallery.appear {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .header {
   background-image: url("../images/desktop/image-header.jpg");
   background-position: bottom;
@@ -204,7 +216,7 @@ a {
   background-size: cover;
   height: 95vh;
   overflow: hidden;
-  padding-bottom: 100rem;
+  padding-bottom: 10rem;
 }
 @media only screen and (max-width: 56.125em) {
   .header {
@@ -224,7 +236,7 @@ a {
   flex-direction: column;
   gap: 2.75rem;
   align-items: center;
-  margin: 6rem 0;
+  margin: 2rem 0;
 }
 .hero h1 {
   text-transform: uppercase;
@@ -241,11 +253,13 @@ a {
 .nav {
   background-color: #3CBDFE;
 }
+.nav .container {
+  padding-top: 2.5rem;
+}
 @media only screen and (max-width: 530px) {
   .nav .row {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    justify-content: center;
   }
 }
 .nav__list {
@@ -374,6 +388,7 @@ a {
 
 .service {
   padding: 10rem;
+  transition: opacity 400ms, transform 800ms;
 }
 @media only screen and (max-width: 69.9375em) {
   .service {
@@ -424,6 +439,7 @@ a {
 .service__img {
   width: 100%;
   height: auto;
+  transition: opacity 400ms, transform 800ms;
 }
 @media only screen and (max-width: 56.125em) {
   .service__img--2 {
@@ -433,6 +449,7 @@ a {
 
 .service-wrapper {
   position: relative;
+  transition: opacity 400ms, transform 800ms;
 }
 .service-wrapper__content {
   position: absolute;
@@ -466,6 +483,21 @@ a {
   height: 100%;
 }
 
+.service-wrapper.appear {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.service.appear {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.service__img.appear {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .testimonials {
   text-align: center;
   padding: 10rem 0;
@@ -495,6 +527,7 @@ a {
 .card {
   width: 30%;
   margin: 5rem 0;
+  transition: opacity 400ms, transform 800ms;
 }
 @media only screen and (max-width: 56.125em) {
   .card {
@@ -519,4 +552,9 @@ a {
 
 .flexible {
   height: 90%;
+}
+
+.card.appear {
+  opacity: 0;
+  transform: translateY(8rem);
 }/*# sourceMappingURL=main.css.map */

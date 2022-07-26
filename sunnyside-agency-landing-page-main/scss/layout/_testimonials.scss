@@ -26,7 +26,9 @@
 .card {
     width: 30%;
     margin: 5rem 0;
-    
+ 
+    transition: opacity 400ms, transform 800ms;
+
     @media only screen and (max-width: $bp-bg) {
         width: 80%;
     }
@@ -54,4 +56,9 @@
 
 .flexible {
     height: 90%;
+}
+
+.card.appear {
+    opacity: 0;
+    transform: translateY(8rem);
 }

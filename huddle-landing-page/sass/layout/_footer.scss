@@ -108,10 +108,25 @@
     }
 }
 
-.copyright {
+.desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    @media only screen and (max-width: $bp-sm) {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.bottom-desc {
     float: right;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.816);
+
+    a {
+        color: rgba(255, 255, 255, 0.816);
+    }
     
     @media only screen and (max-width: $bp-sm) {
         float: none;

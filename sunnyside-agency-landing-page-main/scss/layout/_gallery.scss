@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 50%;
+
+    transition: opacity 400ms, transform 800ms;
     
     @media only screen and (max-width: $bp-md) {
         grid-template-columns: repeat(2, 1fr);
@@ -11,4 +13,9 @@
         height: auto;
         width: 100%;
     }
+}
+
+.gallery.appear {
+    opacity: 0;
+    transform: translateY(8rem);
 }

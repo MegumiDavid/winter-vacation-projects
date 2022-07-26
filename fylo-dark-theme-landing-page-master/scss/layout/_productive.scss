@@ -1,7 +1,7 @@
 .productive {
     background-color: $primary-dark-2;
     overflow: hidden;
-
+    
     @media only screen and (max-width: $bp-md) {
         .container {
             padding-left :10rem ;
@@ -19,16 +19,17 @@
     &__img {
         width: 100%;
         height: auto;
-
+        transition: opacity 400ms, transform 800ms;        
+        
         @media only screen and (max-width: $bp-md) {
             margin-bottom: 5rem;
         }
     }
-
-/*     &__content {
-
-    } */
-
+    
+    &__content {
+        transition: opacity 400ms, transform 800ms;        
+    }
+    
     &__title {
         margin-bottom: 3rem;
     }
@@ -70,4 +71,13 @@
             }
         }
     }
+}
+
+.productive__img.appear {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+.productive__content.appear {
+    opacity: 0;
+    transform: translateY(8rem);
 }

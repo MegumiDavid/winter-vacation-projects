@@ -24,7 +24,7 @@
 
     &__content {
         width: 75%;
-        
+        animation: moveBottomToCenter 900ms; 
         @media only screen and (max-width: $bp-sm) {
             width: 85%;
         }

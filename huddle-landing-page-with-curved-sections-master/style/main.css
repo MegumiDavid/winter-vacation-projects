@@ -423,29 +423,37 @@ li {
     width: 100%;
   }
 }
+.form .message {
+  font-size: 1.4rem;
+}
 .form__input {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   width: 100%;
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: 400;
   color: hsl(192deg, 100%, 9%);
   padding: 1rem;
-  border: 1px solid #000;
+  border: 1px solid #494949;
   border-radius: 4px;
   box-sizing: border-box;
+  /* &:invalid {
+      outline: none !important;
+      border-color: $color-red;
+    }
+
+  &:valid {
+      outline: none !important;
+      border-color: $color-green;
+    } */
 }
-.form__input:invalid {
-  outline: none !important;
-  border-color: hsl(0deg, 100%, 63%);
-}
-.form__input:valid {
-  outline: none !important;
-  border-color: #5cb85c;
+.form__input:focus {
+  border: 1px solid #494949;
 }
 .form__btn {
   border-radius: 0.3rem;
   padding: 1rem 3rem;
+  margin-top: 1rem;
 }
 @media only screen and (max-width: 50em) {
   .form__btn {

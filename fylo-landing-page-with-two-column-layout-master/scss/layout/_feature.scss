@@ -124,3 +124,12 @@
 .quote {
     margin-bottom: 1rem;
 }
+
+.feature-wrapper {
+    transition: opacity 400ms, transform 800ms;
+}
+
+.feature-wrapper.appear {
+    opacity: 0;
+    transform: translateY(8rem);
+}

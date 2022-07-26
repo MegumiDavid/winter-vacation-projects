@@ -8,31 +8,40 @@
         }
     } 
 
-    &.toggle {
-        #btnBurger {
-            > span:first-child {
-                transform: rotate(45deg);
-                transform-origin: 12% 40%;
-            }
-            > span:nth-child(2) {
-                opacity: 0;
-            }
-            > span:last-child {
-                transform: rotate(-45deg);
-                transform-origin: 12% 40%;
-            }
+    @media only screen and (max-width: $bp-smest) {
+        .row {
+            flex-direction: column;
+        }
+        .col-1-of-2 {
+            width: 100%;
         }
     }
 
     &__logo {
         height: 3.5rem;
         width: auto;
+
+        @media only screen and (max-width: $bp-smest) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
         float: right;
+        
+        @media only screen and (max-width: $bp-smest) {
+            float: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
     }
 
     &__item {
@@ -43,57 +52,9 @@
             text-decoration: none;
             color: $primary-dark;
         }
-    }
-}
 
-.hide-for-desktop {
-    @media only screen and (min-width: $bp-x-sm-plus-one) {
-        display: none;
-    }
-}
-.hide-for-mobile {
-    @media only screen and (max-width: $bp-x-sm) {
-        display: none;
-    }
-}
-
-.nav__toggle {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    > span {
-        display: block;
-        width: 25px;
-        height: 2px;
-        background-color: $primary-dark;
-        transition: all .3s center;
-        transform-origin: 3px 1px;
-        
-        &:not(:last-child){
-            margin-bottom: 5px;
+        @media only screen and (max-width: $bp-smest) {
+            &:not(:last-child) {margin-right: 2.5rem;}
         }
-        transition: all .5s;
     }
-}
-
-.mobile-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $light-gray;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem;
-    text-align: center;
-    margin-bottom: -3rem;
-    margin-top: -.5rem;
-    display: none;
-    transition: all 1s;
-    li:not(:last-child) {
-        margin-bottom: 1.5rem;
-    }
-}
-
-.toggle-menu{
-    display: block;
 }

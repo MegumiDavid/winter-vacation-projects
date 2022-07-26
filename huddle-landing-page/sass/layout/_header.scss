@@ -1,6 +1,6 @@
 header, 
 .header {
-    min-height: 70vh;
+    min-height: 700px;
     overflow: hidden;
     background-image: url("../images/bg-hero-desktop.svg");
     background-position: center;
@@ -15,7 +15,7 @@ header,
     // display: flex;
     // align-items: center; 
     @media only screen and (max-width: $bp-md) {
-        min-height: 80vh;
+        min-height:37em;
         background-image: url("../images/bg-hero-mobile.svg");
     }
     @media only screen and (max-width: $bp-sm) {
@@ -29,7 +29,8 @@ header,
     padding-bottom: 5rem;
     
     @media only screen and (max-width: $bp-md) {
-        margin-top: 7vh;
+        margin-top: 6rem;
+        padding-bottom: 10rem;
     }
 
     &__content {
